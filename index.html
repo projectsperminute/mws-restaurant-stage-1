@@ -2,14 +2,16 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Restaurant Reviews</title>
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
@@ -18,7 +20,7 @@
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section class="restaurants">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
@@ -34,10 +36,9 @@
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDApAEArXoPAz6goQb-Vo5jlDUSM4sZn8&libraries=places&callback=initMap"></script>
 
-
-  <footer id="footer">
+  <footer id="footer" role="contentinfo">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
