@@ -25,7 +25,7 @@ a {
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #3397db;
+	color: brown;
 	text-decoration: none;
 }
 a img{
@@ -121,13 +121,13 @@ nav h1 a:hover {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: orange;
     text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
+    color: brown;
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
@@ -331,13 +331,20 @@ nav h1 a:hover {
   text-transform: uppercase;
   line-height: 1.1;
 }
+
+.restaurant-picture {
+  overflow: hidden;
+}
+
 #restaurant-img {
 	width: 100%;
 }
+
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
 }
+
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -384,7 +391,7 @@ nav h1 a:hover {
 
 #reviews-list li p {
   flex: 1 0 100%;
-  margin: 0 0 2em;
+  margin: 0 0 1em;
   font-size: 16px;
 }
 
@@ -421,6 +428,7 @@ nav h1 a:hover {
 }
 
 #restaurant-hours td {
+  padding-right: 1em;
   color: #666;
 }
 
@@ -429,7 +437,7 @@ nav h1 a:hover {
   font-weight: bold;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 780px) {
   #restaurant-container {
     flex-flow: row wrap;
   }
@@ -438,17 +446,13 @@ nav h1 a:hover {
     flex: 1 0 50%;
   }
 
-  #restaurant-img {
-    width: 100%;
-  }
-
   .restaurant-info {
     flex: 1 0 50%;
   }
 
   #reviews-list li p {
     flex: 0 1 auto;
-    margin-right: 2em;
+    margin: 0 2em 1em 0;
   }
 
   #reviews-list li p:last-child {
