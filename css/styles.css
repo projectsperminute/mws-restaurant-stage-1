@@ -56,21 +56,48 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 2em 0;
   background-color: #252831;
 }
-nav {
-  width: 100%;
 
-  text-align:center;
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+nav:hover #logo {
+  fill: orange;
+}
+
+#logo {
+  height: 28px;
+  margin-right: 2em;
+  fill: #fff;
+  transition: all 0.3s ease-out;
+}
+
 nav h1 {
-  margin: auto;
+  margin: 0;
 }
 nav h1 a {
   color: #fff;
   font-size: 14pt;
   font-weight: 200;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  transition: all 0.3s ease-out;
 }
+
+nav h1 a:hover {
+  color: orange;
+}
+
+@media screen and (min-width: 500px) {
+  nav h1 a {
+    letter-spacing: 10px;
+  }
+}
+
+/* ====================== Breadcrumb ====================== */
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -117,7 +144,7 @@ nav h1 a {
   align-items: center;
   width: 100%;
   padding: 2em 0;
-  background-color: #3397DB;
+  background-color: orange;
 }
 .filter-options h2 {
   color: white;
@@ -420,11 +447,13 @@ nav h1 a {
   }
 
   #reviews-list li p {
-    flex: 1 0 calc(33% - 1em);
+    flex: 0 1 auto;
+    margin-right: 2em;
   }
 
   #reviews-list li p:last-child {
     flex: 1 0 100%;
+    margin-right: 0;
   }
 }
 
