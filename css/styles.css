@@ -38,6 +38,15 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+.hidden {position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -86,7 +95,8 @@ nav h1 a {
   transition: all 0.3s ease-out;
 }
 
-nav h1 a:hover {
+nav h1 a:hover,
+nav h1 a:focus {
   color: orange;
 }
 
@@ -136,6 +146,11 @@ nav h1 a:hover {
   width: 100%;
   background-color: #ccc;
 }
+
+.gmnoprint:focus {
+  transform: scale(1.5);
+}
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   display: flex;
@@ -146,7 +161,7 @@ nav h1 a:hover {
   padding: 2em 0;
   background-color: orange;
 }
-.filter-options h2 {
+.filter-options h3 {
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -164,6 +179,10 @@ nav h1 a:hover {
   margin: 10px;
   padding: 0 10px;
   width: 90%;
+}
+
+.filter-options select:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.8);
 }
 #neighborhoods-select{
 
@@ -199,6 +218,7 @@ nav h1 a:hover {
   padding: 2em;
   text-align: center;
 }
+
 #restaurants-list li {
   display: flex;
   flex-flow: column wrap;
@@ -226,7 +246,7 @@ nav h1 a:hover {
   height: auto;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   padding: 0 30px;
   color: #f18200;
   font-family: Arial,sans-serif;
