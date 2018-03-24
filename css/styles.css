@@ -4,36 +4,44 @@
 * {
   box-sizing: border-box;
 }
+
 body,td,th,p{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   color: #333;
 }
+
 body {
   background-color: #fdfdfd;
   margin: 0;
   position:relative;
 }
+
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #333;
 }
+
 a {
 	color: orange;
 	text-decoration: none;
 }
+
 a:hover, a:focus {
 	color: brown;
 	text-decoration: none;
 }
+
 a img{
 	border: none 0 #fff;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
+
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -50,6 +58,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 }
+
 #footer {
   background-color: #444;
   color: #aaa;
@@ -59,6 +68,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+
 /* ====================== Navigation ====================== */
 .header {
   padding: 2em 0;
@@ -85,6 +95,7 @@ nav:hover #logo {
 nav h1 {
   margin: 0;
 }
+
 nav h1 a {
   color: #fff;
   font-size: 14pt;
@@ -139,6 +150,7 @@ nav h1 a:focus {
     color: brown;
     text-decoration: underline;
 }
+
 /* ====================== Map ====================== */
 #map {
   height: 400px;
@@ -160,6 +172,7 @@ nav h1 a:focus {
   padding: 1em 0;
   background-color: orange;
 }
+
 .filter-options h3 {
   color: white;
   font-size: 1rem;
@@ -168,6 +181,7 @@ nav h1 a:focus {
   text-transform: uppercase;
   margin: 0 20px;
 }
+
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
@@ -183,9 +197,7 @@ nav h1 a:focus {
 .filter-options select:focus {
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.8);
 }
-#neighborhoods-select{
 
-}
 #cuisines-select{
   margin-bottom: 0;
 }
@@ -233,6 +245,7 @@ nav h1 a:focus {
   text-align: left;
   transition: all 0.5s ease-out;
 }
+
 #restaurants-list li:hover {
   transform: scale(1.05);
 }
@@ -245,6 +258,7 @@ nav h1 a:focus {
   height: auto;
   min-width: 100%;
 }
+
 #restaurants-list li h3 {
   padding: 0 30px;
   color: #f18200;
@@ -256,11 +270,13 @@ nav h1 a:focus {
   margin: 20px 0 10px;
   text-transform: uppercase;
 }
+
 #restaurants-list p {
   padding: 0 30px;
   margin: 0;
   font-size: 1rem;
 }
+
 #restaurants-list li a {
   width: 100%;
   background-color: orange;
@@ -321,6 +337,7 @@ nav h1 a:focus {
   flex: 1 0 100%;
   background: blue none repeat scroll 0 0;
 }
+
 .inside #map {
   background-color: #ccc;
   height: 400px;
@@ -393,10 +410,12 @@ nav h1 a:focus {
   letter-spacing: -1px;
   padding-bottom: 1pt;
 }
+
 #reviews-list {
   margin: 0;
   padding: 0;
 }
+
 #reviews-list li {
   display: flex;
   flex-flow: row wrap;
