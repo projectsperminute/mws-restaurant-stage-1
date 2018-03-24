@@ -353,6 +353,7 @@ nav h1 a:focus {
 
 .restaurant-picture {
   overflow: hidden;
+  align-self: center;
 }
 
 #restaurant-img {

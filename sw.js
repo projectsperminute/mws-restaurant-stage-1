@@ -1,4 +1,4 @@
-var staticCacheName = 'restaurant-reviews-v7';
+var staticCacheName = 'restaurant-reviews-v8';
 var allCaches = [
     staticCacheName
 ];

@@ -57,7 +57,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const largeSource = document.getElementById('restaurant-source-large');
   let largeSrcset = DBHelper.imageUrlForRestaurant(restaurant);
-  largeSrcset = largeSrcset.replace(/.jpg/i, '_large.jpg');
+  largeSrcset = largeSrcset.replace(/.jpg/i, '');
+  largeSrcset = largeSrcset + '-1600_large.jpg 2x, ' + largeSrcset +'-800_large.jpg';
   largeSource.srcset = largeSrcset;
 
   const mediumSource = document.getElementById('restaurant-source-medium');
