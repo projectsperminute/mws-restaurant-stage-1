@@ -28,7 +28,7 @@
     </section>
     <section class="restaurants">
       <h2 class="hidden">Restaurants list</h2>
-      <nav class="filter-options">
+      <form class="filter-options">
         <h3>Filter Results</h3>
         <label for="neighborhoods-select" class="hidden">Neighborhoods</label>
         <select id="neighborhoods-select" name="neighborhoods" role="listbox" onchange="updateRestaurants()">
@@ -38,7 +38,7 @@
         <select id="cuisines-select" role="listbox" name="cuisines" role="listbox" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
-      </nav>
+      </form>
       <ul id="restaurants-list"></ul>
     </section>
   </main>
